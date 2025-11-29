@@ -21,7 +21,7 @@ AI powered web application for fake news detection. This application analyzes th
 ### 1. Clone the repository to your local machine:
 ```bash
 git clone https://github.com/Andrei25i/Fake-News-Detection.git
-cd fake-news-detector
+cd Fake-News-Detection
 ```
 ### 2. Create a virtual environment, activate it, and install dependencies:
 ```bash
