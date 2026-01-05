@@ -52,7 +52,8 @@ PORT=
 
 ```bash
 # frontend/.env
-VITE_API_URL=
+# example: http://BACKEND_HOST:BACKEND_PORT
+VITE_API_URL= 
 ```
 ### 5. Start the backend
 ```bash

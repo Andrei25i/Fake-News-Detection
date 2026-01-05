@@ -8,8 +8,10 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-HOST = os.getenv("HOST", "127.0.0.1")
-PORT = int(os.getenv("PORT", 8000))
+raw_host = os.getenv("HOST")
+raw_port = os.getenv("PORT")
+HOST = raw_host if raw_host and raw_host.strip() else "127.0.0.1"
+PORT = int(raw_port) if raw_port and raw_port.strip() else 8000
 
 app = FastAPI(title="Fake News Detection API", version="1.0")
 app.add_middleware(
